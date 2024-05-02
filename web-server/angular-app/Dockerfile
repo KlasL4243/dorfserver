@@ -1,6 +1,5 @@
 FROM node:22.0.0-bookworm-slim
 
-RUN mkdir /angular-app
 WORKDIR /angular-app
 
 RUN npm install -g @angular/cli@17
@@ -10,6 +9,5 @@ RUN npm ci
 
 COPY . .
 
-CMD ng serve
-
 EXPOSE 4200
+CMD ng serve --host 0.0.0.0 --port 4200 --disable-host-check
