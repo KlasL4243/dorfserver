@@ -10,4 +10,4 @@ RUN npm ci
 COPY . .
 
 EXPOSE 4200
-CMD ng serve --host 0.0.0.0 --port 4200 --ssl true --ssl-key ./certs/ssl.key
+CMD ng serve --host 0.0.0.0 --port 4200 
