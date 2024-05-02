@@ -10,4 +10,4 @@ RUN npm ci
 
 COPY . .
 
-CMD ng server
+CMD ng serve
