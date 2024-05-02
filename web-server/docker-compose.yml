@@ -1,0 +1,6 @@
+services:
+  angular-app-service:
+    build:
+      context: angular-app/
+    ports:
+      - 80:80
