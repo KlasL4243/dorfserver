@@ -11,3 +11,5 @@ RUN npm ci
 COPY . .
 
 CMD ng serve
+
+EXPOSE 4200
