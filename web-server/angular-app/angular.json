@@ -60,7 +60,12 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          
+          "options": {
+            "host": "angular-app-service",
+            "port": 4200,
+            "sslKey": "angular-app/certs/sll.key",
+            "sslCert": "angular-app/certs/ssl.crt"
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
