@@ -1,0 +1,11 @@
+services:
+  minecraft-server:
+    image: itzg/minecraft-server:java21
+    tty: true
+    stdin_open: true
+    ports:
+      - "${MC_PORT}:${MC_PORT}"
+    env_file:
+      - .env
+    volumes:
+      - ./minecraft-server:/data
